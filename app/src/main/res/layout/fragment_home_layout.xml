@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+    <!--轮播图-->
+    <com.zhouwei.mzbanner.MZBannerView
+        android:id="@+id/home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:canLoop="true"
+        app:indicatorAlign="center"
+        app:indicatorPaddingLeft="10dp"
+        app:middle_page_cover="false"
+        app:open_mz_mode="true" />
+    <!--类别-->
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/home_banner"
+        android:id="@+id/home_category"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_below="@+id/home_category"
+        android:id="@+id/home_indicator"
+        app:ci_width="10dp"
+        app:ci_height="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <com.quickly.fragment.home.LoadMoreListView
+        android:layout_below="@+id/home_category"
+        android:id="@+id/home_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

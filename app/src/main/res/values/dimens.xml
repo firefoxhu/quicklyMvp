@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="home_recommend_item_title_size_18">18sp</dimen>
+
+
+    <dimen name="circle_item_nickname">12sp</dimen>
+    <dimen name="circle_item_remove">16sp</dimen>
+    <dimen name="circle_item_content">14sp</dimen>
+    <dimen name="circle_recommend_title_size_18">18sp</dimen>
+</resources>
